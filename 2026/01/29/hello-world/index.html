@@ -231,4 +231,8 @@
   } else {
     window.loadOtherComment = loadTwikoo
   }
-})()</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
+})()</script></div> <script> (function(){ // 1. 檢查是否為首頁 (路徑是 / 或 /index.html) if (window.location.pathname === "/" || window.location.pathname === "/index.html") {
+// 2. 等待網頁載入完成後執行 document.addEventListener("DOMContentLoaded", function(){ var siteInfo = document.getElementById("site-info"); // 找到首頁中間標題的容器
+if (siteInfo) { // 3. 建立按鈕元素 var btnDiv = document.createElement("div"); btnDiv.className = "hero-btn-wrapper"; btnDiv.innerHTML = "<a class=\"hero-btn\" href=\"/toolbox/\"><i class=\"fa-solid fa-box-open\"></i> 進入治療百寶箱</a>";
+// 4. 把按鈕插進去 (放在標題下方) siteInfo.appendChild(btnDiv); } }); } })(); </script>
+<style> /* 按鈕的樣式設定 */ .hero-btn-wrapper { margin-top: 20px; /* 與上方文字的距離 */ animation: fadeInUp 1s; /* 進場動畫 */ } .hero-btn { display: inline-block; padding: 10px 30px; background: rgba(255, 255, 255, 0.25); /* 半透明背景 */ border: 2px solid #fff; color: #fff !important; border-radius: 50px; text-decoration: none !important; font-size: 1.1em; font-weight: bold; transition: all 0.3s ease; backdrop-filter: blur(5px); /* 磨砂玻璃效果 */ } .hero-btn:hover { background: #fff; color: #49b1f5 !important; /* 滑鼠移上去變藍色字 */ transform: scale(1.1); /* 稍微放大 */ box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); cursor: pointer; } /* 簡單的進場動畫 */ @keyframes fadeInUp { from { opacity: 0; transform: translate3d(0, 20px, 0); } to { opacity: 1; transform: translate3d(0, 0, 0); } } </style> <script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
