@@ -2,7 +2,8 @@
  * Axb_Nasal_Task *
  ***********************/
 
-import { PsychoJS } from 'https://unpkg.com/psychojs@2024.2.4/dist/index.js';
+import { core, data, sound, util, visual, hardware } from './lib/psychojs-2025.2.4.js';
+const { PsychoJS } = core;
 const { TrialHandler, MultiStairHandler } = data;
 const { Scheduler } = util;
 //some handy aliases as in the psychopy scripts;
