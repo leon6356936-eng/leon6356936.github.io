@@ -3,7 +3,6 @@
  ***********************/
 
 import { PsychoJS } from 'https://unpkg.com/psychojs@2024.2.4/dist/index.js';
-const { PsychoJS } = core;
 const { TrialHandler, MultiStairHandler } = data;
 const { Scheduler } = util;
 //some handy aliases as in the psychopy scripts;
