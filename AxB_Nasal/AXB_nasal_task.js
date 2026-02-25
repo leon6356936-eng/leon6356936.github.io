@@ -2,7 +2,7 @@
  * Axb_Nasal_Task *
  ***********************/
 
-import { core, data, sound, util, visual, hardware } from './lib/psychojs-2025.2.4.js';
+import { PsychoJS } from 'https://unpkg.com/psychojs@2024.2.4/dist/index.js';
 const { PsychoJS } = core;
 const { TrialHandler, MultiStairHandler } = data;
 const { Scheduler } = util;
@@ -68,24 +68,8 @@ dialogCancelScheduler.add(quitPsychoJS, 'Thank you for your patience.', false);
 psychoJS.start({
   expName: expName,
   expInfo: expInfo,
-  resources: [
-    // resources:
-    {'name': 'conditions.xlsx', 'path': 'conditions.xlsx'},
-    {'name': 'stimuli_processed/ban_v1.wav', 'path': 'stimuli_processed/ban_v1.wav'},
-    {'name': 'stimuli_processed/ban_v2.wav', 'path': 'stimuli_processed/ban_v2.wav'},
-    {'name': 'stimuli_processed/ba_v1.wav', 'path': 'stimuli_processed/ba_v1.wav'},
-    {'name': 'stimuli_processed/ba_v2.wav', 'path': 'stimuli_processed/ba_v2.wav'},
-    {'name': 'stimuli_processed/gen_v1.wav', 'path': 'stimuli_processed/gen_v1.wav'},
-    {'name': 'stimuli_processed/gen_v2.wav', 'path': 'stimuli_processed/gen_v2.wav'},
-    {'name': 'stimuli_processed/ge_v1.wav', 'path': 'stimuli_processed/ge_v1.wav'},
-    {'name': 'stimuli_processed/ge_v2.wav', 'path': 'stimuli_processed/ge_v2.wav'},
-    {'name': 'stimuli_processed/bang_v1.wav', 'path': 'stimuli_processed/bang_v1.wav'},
-    {'name': 'stimuli_processed/bang_v2.wav', 'path': 'stimuli_processed/bang_v2.wav'},
-    {'name': 'stimuli_processed/geng_v1.wav', 'path': 'stimuli_processed/geng_v1.wav'},
-    {'name': 'stimuli_processed/geng_v2.wav', 'path': 'stimuli_processed/geng_v2.wav'},
-  ]
-});
-
+  });
+  
 psychoJS.experimentLogger.setLevel(core.Logger.ServerLevel.INFO);
 
 
