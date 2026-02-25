@@ -2,7 +2,7 @@
  * Axb_Nasal_Task *
  ***********************/
 
-import { core, data, sound, util, visual, hardware } from './lib/psychojs-2025.2.4.js';
+import { core, data, sound, util, visual, hardware } from './lib/psychojs-2025.1.0.js';
 const { PsychoJS } = core;
 const { TrialHandler, MultiStairHandler } = data;
 const { Scheduler } = util;
@@ -79,7 +79,7 @@ async function updateInfo() {
   currentLoop = psychoJS.experiment;  // right now there are no loops
   expInfo['date'] = util.MonotonicClock.getDateStr();  // add a simple timestamp
   expInfo['expName'] = expName;
-  expInfo['psychopyVersion'] = '2025.2.4';
+  expInfo['psychopyVersion'] = '2025.1.0';
   expInfo['OS'] = window.navigator.platform;
 
 
@@ -301,10 +301,7 @@ function instructionsRoutineEachFrame() {
     
     // if instr_key is active this frame...
     if (instr_key.status === PsychoJS.Status.STARTED) {
-      let theseKeys = instr_key.getKeys({
-        keyList: typeof 'space' === 'string' ? ['space'] : 'space', 
-        waitRelease: false
-      });
+      let theseKeys = instr_key.getKeys({keyList: 'space', waitRelease: false});
       _instr_key_allKeys = _instr_key_allKeys.concat(theseKeys);
       if (_instr_key_allKeys.length > 0) {
         instr_key.keys = _instr_key_allKeys[_instr_key_allKeys.length - 1].name;  // just the last key pressed
@@ -620,10 +617,7 @@ function trialRoutineEachFrame() {
     
     // if key_resp is active this frame...
     if (key_resp.status === PsychoJS.Status.STARTED) {
-      let theseKeys = key_resp.getKeys({
-        keyList: typeof ['left','right'] === 'string' ? [['left','right']] : ['left','right'], 
-        waitRelease: false
-      });
+      let theseKeys = key_resp.getKeys({keyList: ['left','right'], waitRelease: false});
       _key_resp_allKeys = _key_resp_allKeys.concat(theseKeys);
       if (_key_resp_allKeys.length > 0) {
         key_resp.keys = _key_resp_allKeys[_key_resp_allKeys.length - 1].name;  // just the last key pressed
