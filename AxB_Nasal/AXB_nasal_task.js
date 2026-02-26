@@ -2,12 +2,12 @@
  * Axb_Nasal_Task *
  ***********************/
 
-import { PsychoJS } from 'https://lib.pavlovia.org/core-2024.2.4.js';
-import * as core from 'https://lib.pavlovia.org/core-2024.2.4.js';
-import { Scheduler } from 'https://lib.pavlovia.org/util-2024.2.4.js';
-import * as util from 'https://lib.pavlovia.org/util-2024.2.4.js';
-import * as visual from 'https://lib.pavlovia.org/visual-2024.2.4.js';
-import * as data from 'https://lib.pavlovia.org/data-2024.2.4.js';
+import { PsychoJS } from 'https://lib.pavlovia.org/core-2024.1.1.js';
+import * as core from 'https://lib.pavlovia.org/core-2024.1.1.js';
+import { Scheduler } from 'https://lib.pavlovia.org/util-2024.1.1.js';
+import * as util from 'https://lib.pavlovia.org/util-2024.1.1.js';
+import * as visual from 'https://lib.pavlovia.org/visual-2024.1.1.js';
+import * as data from 'https://lib.pavlovia.org/data-2024.1.1.js';
 
 
 // store info about the experiment session:
