@@ -2,12 +2,13 @@
  * Axb_Nasal_Task *
  ***********************/
 
-import { PsychoJS } from 'https://lib.pavlovia.org/core-2024.1.1.js';
-import * as core from 'https://lib.pavlovia.org/core-2024.1.1.js';
-import { Scheduler } from 'https://lib.pavlovia.org/util-2024.1.1.js';
-import * as util from 'https://lib.pavlovia.org/util-2024.1.1.js';
-import * as visual from 'https://lib.pavlovia.org/visual-2024.1.1.js';
-import * as data from 'https://lib.pavlovia.org/data-2024.1.1.js';
+import { core, data, sound, util, visual, hardware } from './lib/psychojs-2026.1.0.js';
+const { PsychoJS } = core;
+const { TrialHandler, MultiStairHandler } = data;
+const { Scheduler } = util;
+//some handy aliases as in the psychopy scripts;
+const { abs, sin, cos, PI: pi, sqrt } = Math;
+const { round } = util;
 
 
 // store info about the experiment session:
